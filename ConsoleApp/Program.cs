@@ -1,10 +1,14 @@
 ﻿using System.Numerics;
 using ComplexNumbers;
 using ComplexNumbers.Strategies;
+using ComplexNumbers.Strategies.ArithmeticStrategies;
+using ComplexNumbers.Strategies.LogicalStrategies;
 using ConsoleApp;
 
 Complex a, b;
-CalculationContext context = new CalculationContext(new AdditionStrategy());
+CalculationContext context = new CalculationContext(
+    new AdditionStrategy(), 
+    new EqualityStrategy());
 
 try
 {
@@ -22,16 +26,21 @@ catch (OverflowException ex)
     ReadNumbers();
 }
 
-Console.Write($"Addition result: {context.ExecuteStrategy(a, b).ToPrettifiedString()}\n");
+Console.Write($"Addition result: {context.ExecuteArithmeticStrategy(a, b).ToPrettifiedString()}\n");
 
-context.SetStrategy(new SubtractionStrategy());
-Console.Write($"Subtraction result: {context.ExecuteStrategy(a, b).ToPrettifiedString()}\n");
+context.SetArithmeticStrategy(new SubtractionStrategy());
+Console.Write($"Subtraction result: {context.ExecuteArithmeticStrategy(a, b).ToPrettifiedString()}\n");
 
-context.SetStrategy(new MultiplicationStrategy());
-Console.Write($"Multiplication result: {context.ExecuteStrategy(a, b).ToPrettifiedString()}\n");
+context.SetArithmeticStrategy(new MultiplicationStrategy());
+Console.Write($"Multiplication result: {context.ExecuteArithmeticStrategy(a, b).ToPrettifiedString()}\n");
 
-context.SetStrategy(new DivisionStrategy());
-Console.Write($"Division result: {context.ExecuteStrategy(a, b).ToPrettifiedString()}\n");
+context.SetArithmeticStrategy(new DivisionStrategy());
+Console.Write($"Division result: {context.ExecuteArithmeticStrategy(a, b).ToPrettifiedString()}\n");
+
+Console.Write($"Are equals: {context.ExecuteLogicalStrategy(a, b)}\n");
+context.SetLogicalStrategy(new InequalityStrategy());
+Console.Write($"Are not equals: {context.ExecuteLogicalStrategy(a, b)}\n");
+
 
 void ReadNumbers()
 {

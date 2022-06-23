@@ -1,9 +1,9 @@
 using System.Numerics;
 using ComplexNumbers.Strategies;
 
-namespace ComplexNumbers;
+namespace ComplexNumbers.Strategies.ArithmeticStrategies;
 
-public class SubtractionStrategy: ICalculationStrategy
+public class SubtractionStrategy: IArithmeticStrategy
 {
     public Complex Execute(Complex a, Complex b)
     {

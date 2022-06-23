@@ -1,8 +1,8 @@
 using System.Numerics;
 
-namespace ComplexNumbers.Strategies;
+namespace ComplexNumbers.Strategies.ArithmeticStrategies;
 
-public class DivisionStrategy: ICalculationStrategy
+public class DivisionStrategy: IArithmeticStrategy
 {
     public Complex Execute(Complex a, Complex b)
     {
