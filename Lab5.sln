@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{7A1837D9-53EC-461F-B3FA-1C471C0929AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComplexNumbers", "ComplexNumbers\ComplexNumbers.csproj", "{0596FBCA-FF19-463D-842B-47F3ADD4F3EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A1837D9-53EC-461F-B3FA-1C471C0929AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A1837D9-53EC-461F-B3FA-1C471C0929AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A1837D9-53EC-461F-B3FA-1C471C0929AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A1837D9-53EC-461F-B3FA-1C471C0929AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0596FBCA-FF19-463D-842B-47F3ADD4F3EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0596FBCA-FF19-463D-842B-47F3ADD4F3EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0596FBCA-FF19-463D-842B-47F3ADD4F3EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0596FBCA-FF19-463D-842B-47F3ADD4F3EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
